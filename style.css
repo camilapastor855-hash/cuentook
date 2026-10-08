@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #2c3e50, #4ca1af);
+    color: #ecf0f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.header {
+    text-align: center;
+    padding: 15px 20px;
+    background-color: rgba(52, 73, 94, 0.95);
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 10;
+}
+
+.header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+    color: #f1c40f;
+}
+
+.header p {
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+}
+
+/* Barra de herramientas */
+.toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.accessibility-group, .nav-group {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.tool-btn, .nav-btn {
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.tool-btn:hover, .nav-btn:hover {
+    background-color: #d35400;
+    transform: translateY(-2px);
+}
+
+.nav-btn {
+    background-color: #3498db;
+}
+
+.nav-btn:hover {
+    background-color: #2980b9;
+}
+
+#page-indicator {
+    font-weight: bold;
+    font-size: 0.95rem;
+    padding: 0 5px;
+    color: #f39c12;
+}
+
+#loading {
+    display: none;
+    margin-top: 10px;
+    color: #f1c40f;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.book-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    width: 100%;
+}
+
+.flip-book {
+    display: none;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    border-radius: 5px;
+}
+
+.page {
+    background-color: #fff;
+    border: solid 1px #bdc3c7;
+    overflow: hidden;
+    box-shadow: inset 0 0 15px rgba(0,0,0,0.05);
+}
+
+.page canvas {
+    width: 100%;
+    height: 100%;
+}
+
+.stf__wrapper {
+    background-color: transparent !important;
+}
