@@ -8,7 +8,7 @@ let pdfDoc = null;
 let currentScale = 1.5; // Escala inicial
 
 // Nombre exacto del archivo PDF en el repositorio
-const pdfFileName = 'Lucía, la niña que transformó lo roto.pdf';
+const pdfFileName = 'cuento.pdf';
 
 // Generador de efecto de sonido de página (Papel pasando) usando Web Audio API
 function playPageFlipSound() {
